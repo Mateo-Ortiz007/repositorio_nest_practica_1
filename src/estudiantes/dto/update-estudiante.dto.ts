@@ -1,3 +1,6 @@
-import { CreateEstudianteDto } from './create-estudiante.dto';
-
-export class UpdateEstudianteDto extends CreateEstudianteDto {}
+export class UpdateEstudianteDto {
+  nombre?: string;
+  apellido?: string;
+  email?: string;
+  curso?: string;
+}
