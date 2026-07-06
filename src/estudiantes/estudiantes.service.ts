@@ -42,12 +42,4 @@ export class EstudiantesService {
     return estudiante;
   }
 
-  remove(id: number): { message: string } {
-    const index = this.estudiantes.findIndex((e) => e.id === id);
-    if (index === -1) {
-      throw new NotFoundException(`Estudiante con id ${id} no encontrado`);
-    }
-    this.estudiantes.splice(index, 1);
-    return { message: `Estudiante con id ${id} eliminado` };
-  }
 }
